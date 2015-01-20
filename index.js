@@ -66,7 +66,7 @@ Touch.prototype = {
 			touchEvent.offsetX = touchEvent.clientX - this.targetElement.offsetLeft;
 			touchEvent.offsetY = touchEvent.clientY - this.targetElement.offsetTop;
 		}
-		var identifier = touchEvent.identifier|0;
+		var identifier = 0;//touchEvent.identifier|0;
 		var touch = this.touches[identifier];
 		switch(state) {
 			case START:
